@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/Compass/Source/Compass.gd" type="Script" id=1]
+
+[node name="Compass" type="Control"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+script = ExtResource( 1 )
+CameraPath = NodePath("")
+
+[node name="Bg" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 1, 1, 1, 0.25 )
+
+[node name="Dial" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 96, 96 )
+expand = true
+stretch_mode = 6
+
+[node name="Needle" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 96, 96 )
+expand = true
+stretch_mode = 6
